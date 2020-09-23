@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{{ title }}</title>
+        <style>
+            body {
+                text-align: center;
+            }
+            div.container {
+                width: 400px;
+                margin: 0 auto;
+            }
+            .five-stars {
+                font-size: 4em;
+            }
+
+            nav ul {
+                list-style: none;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        {{ content | safe }}
+    </body>
+</html>
